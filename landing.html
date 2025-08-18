@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EventEase - Plan Your Perfect Event</title>
+  <style>
+    /* Background */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #fff;
+      background: linear-gradient(to bottom right, #2b0008, #3d0015, #5a001f);
+      min-height: 100vh;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Glass Effect */
+    .glass {
+      background: rgba(60, 0, 20, 0.6);
+      border-radius: 16px;
+      padding: 2rem;
+      margin: 2rem auto;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+    }
+
+    /* Navbar */
+    .navbar {
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      color: #ff4da6;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    .navbar nav a {
+      margin-left: 1rem;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .navbar nav a:hover {
+      color: #ff80bf;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 5rem 0;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2.8rem;
+      color: #ff4da6;
+    }
+    .hero p {
+      margin: 1rem 0 2rem;
+      font-size: 1.2rem;
+      color: #f5f5f5;
+    }
+
+    /* Buttons */
+    .btn-primary {
+      display: inline-block;
+      background: linear-gradient(to right, #ff4da6, #ff80bf);
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn-primary:hover { opacity: 0.9; }
+    .btn-secondary {
+      display: inline-block;
+      border: 2px solid #ff80bf;
+      color: #ff80bf;
+      padding: 0.8rem 1.5rem;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn-secondary:hover {
+      background: #ff80bf;
+      color: #330033;
+    }
+
+    /* Sections */
+    section { margin: 3rem 0; }
+    h2 {
+      color: #ff80bf;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Features */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+    .feature {
+      padding: 1rem;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.08);
+      font-size: 1.1rem;
+    }
+
+    /* Steps */
+    .step-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+    }
+    .step {
+      padding: 1.5rem;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.08);
+      font-size: 1.1rem;
+    }
+
+    /* Cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .card {
+      padding: 1.5rem;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.08);
+      text-align: center;
+    }
+    .card button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      background: linear-gradient(to right, #ff4da6, #ff80bf);
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .card button:hover { opacity: 0.9; }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      background: rgba(0,0,0,0.4);
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    .footer nav a {
+      margin: 0 0.5rem;
+      color: #fff;
+      text-decoration: none;
+    }
+    .footer nav a:hover { color: #ff80bf; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar glass">
+    <div class="container nav-content">
+      <h1 class="logo">🎊 EventEase</h1>
+      <nav>
+        <a href="#">🏠 Home</a>
+        <a href="./index.html">🔑 Login</a>
+        <a href="./signup.html" class="btn-primary">✨ Sign Up</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero glass">
+    <h2>🎉 Plan Your Perfect Event with Ease</h2>
+    <p>
+      Discover trusted event managers, compare essential items with details and pricing, 
+      and book everything you need to make your celebration stress-free. 
+    </p>
+    <a href="#managers" class="btn-primary">👔 Find Your Event Manager</a>
+    <a href="#items" class="btn-secondary">🎁 Explore Event Items</a>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="glass container">
+    <h2>💡 Why Choose EventEase?</h2>
+    <div class="feature-grid">
+      <div class="feature">🤵 Browse experienced event managers near you</div>
+      <div class="feature">🎀 Compare event items & packages with details & pricing</div>
+      <div class="feature">💳 Easy booking and secure payments</div>
+      <div class="feature">⭐ Reviews & ratings to help you choose the best</div>
+      <div class="feature">⏳ Save time & stress with everything in one place</div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="glass container">
+    <h2>🛠️ Plan in 3 Easy Steps</h2>
+    <div class="step-grid">
+      <div class="step"><h3>1. 🔍 Search</h3><p>Find managers & items tailored to your needs</p></div>
+      <div class="step"><h3>2. 📊 Compare</h3><p>Check reviews, pricing, and availability</p></div>
+      <div class="step"><h3>3. 🎊 Book & Relax</h3><p>Confirm your booking and let EventEase handle the rest</p></div>
+    </div>
+  </section>
+
+  <!-- Managers & Items -->
+  <section id="managers" class="glass container">
+    <h2>👨‍💼 Trusted Managers & Popular Event Essentials</h2>
+    <div class="cards">
+      <div class="card">💍 Wedding Planner <button>Book Now</button></div>
+      <div class="card">🍽️ Catering Services <button>Book Now</button></div>
+      <div class="card">📸 Photography <button>Book Now</button></div>
+      <div class="card">🎀 Decorations <button>Book Now</button></div>
+      <div class="card">🏢 Corporate Events <button>Book Now</button></div>
+      <div class="card">🏛️ Venue Booking <button>Book Now</button></div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="glass container">
+    <h2>💬 What Our Customers Say</h2>
+    <div class="cards">
+      <div class="card">“🎊 EventEase made my wedding stress-free!” <br>– Priya S.</div>
+      <div class="card">“💼 I booked a corporate event manager in minutes. Brilliant platform!” <br>– Raj K.</div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="glass container">
+    <h2>🎉 Ready to Plan Your Dream Event?</h2>
+    <p>Stop stressing. Start celebrating with EventEase 🥂</p>
+    <a href="Signup_page.html" class="btn-primary">🚀 Book Your Event Manager Now</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer glass">
+    <p>© 2025 EventEase. All rights reserved.</p>
+    <nav>
+      <a href="#">ℹ️ About</a>
+      <a href="#">📞 Contact</a>
+      <a href="#">❓ FAQ</a>
+      <a href="#">📜 Privacy Policy</a>
+      <a href="#">⚖️ Terms</a>
+    </nav>
+  </footer>
+
+</body>
+</html>
